@@ -1,0 +1,28 @@
+[2024-04-20 09:07:26,366] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_toll_data.unzip_data manual__2024-04-20T09:07:25.152127+00:00 [queued]>
+[2024-04-20 09:07:26,381] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_toll_data.unzip_data manual__2024-04-20T09:07:25.152127+00:00 [queued]>
+[2024-04-20 09:07:26,382] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-04-20 09:07:26,382] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-04-20 09:07:26,382] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-04-20 09:07:26,401] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): unzip_data> on 2024-04-20 09:07:25.152127+00:00
+[2024-04-20 09:07:26,413] {standard_task_runner.py:52} INFO - Started process 6943 to run task
+[2024-04-20 09:07:26,419] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_toll_data', 'unzip_data', 'manual__2024-04-20T09:07:25.152127+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/ETL_toll_data.py', '--cfg-path', '/tmp/tmpmrbxqr8j', '--error-file', '/tmp/tmpmwid_sxd']
+[2024-04-20 09:07:26,419] {standard_task_runner.py:80} INFO - Job 13: Subtask unzip_data
+[2024-04-20 09:07:26,525] {task_command.py:371} INFO - Running <TaskInstance: ETL_toll_data.unzip_data manual__2024-04-20T09:07:25.152127+00:00 [running]> on host f3257ad4c610
+[2024-04-20 09:07:26,648] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=longdvnl@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Longdvnl
+AIRFLOW_CTX_DAG_ID=ETL_toll_data
+AIRFLOW_CTX_TASK_ID=unzip_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-04-20T09:07:25.152127+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-04-20T09:07:25.152127+00:00
+[2024-04-20 09:07:26,650] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-04-20 09:07:26,651] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'tar -xzf /home/project/***/dags/finalassignment/tolldata.tgz -C /home/project/***/dags/finalassignment']
+[2024-04-20 09:07:26,692] {subprocess.py:85} INFO - Output:
+[2024-04-20 09:07:26,720] {subprocess.py:96} INFO - Command exited with return code 0
+[2024-04-20 09:07:26,818] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ETL_toll_data, task_id=unzip_data, execution_date=20240420T090725, start_date=20240420T090726, end_date=20240420T090726
+[2024-04-20 09:07:26,912] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-04-20 09:07:27,111] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
