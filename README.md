@@ -16,7 +16,7 @@ In this repo, you will author an Apache Airflow DAG that will:
 
 ## Implementation steps
 
-Please follow the steps provided in the assignment document to complete the tasks. These include:
+The steps are as follows. Including:
 
 1. Setting up the lab environment.
 2. Creating the necessary directory structure.
